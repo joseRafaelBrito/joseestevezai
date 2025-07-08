@@ -1,0 +1,66 @@
+I want you to create a modern, responsive landing page based on the layout shown in the image I’ve uploaded.
+
+Use:
+- React + Vite
+- TailwindCSS for styling
+- Modular component structure (separate files for Header, HeroSection, Features, Services, Projects, Testimonials, Blog, Footer)
+
+Page structure:
+1. **Header/Navbar**
+   - Logo: "MidAI"
+   - Menu items: Home, Services, Projects, Pricing, Blog, Pages, Let's Talk (highlighted red)
+   - Dark navbar with white/pinkish text
+   - Sticky top if possible
+
+2. **Hero Section**
+   - Dark background
+   - Left side: Big headline "We Are Building AI Technology That Helps Business Grow"
+   - Subtext below
+   - Two buttons: "Get Started" (red), "Learn More" (bordered)
+   - Trusted by 200+ companies line
+   - Right side: 3D illustration with 2 glowing characters inside a futuristic platform
+
+3. **Intelligent Features Section**
+   - Title: "Intelligent Features"
+   - Cards with icons and titles:
+     - Automation
+     - Predictive Analytics
+     - Language Model
+     - Smart Solutions
+   - Use hover effects and clean spacing
+
+4. **Services Section**
+   - Title: "Top-Notch Services And Solution To Ensure Your Success"
+   - Grid layout (2 columns on desktop)
+   - Cards like:
+     - Personalized Marketing
+     - AI-Powered Chatbots
+     - Process Automation
+     - Predictive Analytics
+
+5. **Projects Section**
+   - Title: "Our Accomplished Projects"
+   - Cards for:
+     - Personality Prediction via CV
+     - Voice-based Virtual Assistant
+     - Facial Emotion Recognition
+   - Use images, read more links, and a call-to-action button: "Explore All Projects"
+
+6. **Client Testimonials**
+   - Title: "Feedback From Clients"
+   - Two testimonial cards with client photos, quotes, names, and star ratings
+
+7. **Blog Preview**
+   - Section title: "Latest Blog & Articles"
+   - Grid with previews (images, short titles)
+
+8. **Footer**
+   - Dark footer with simple links and copyright
+
+Design:
+- Use gradient background (dark blue + purple)
+- Rounded corners and shadows for cards
+- Hover states for buttons and cards
+- Mobile responsive: stack elements, use menu icon for navbar
+
+Generate the full project using Vite + React + Tailwind.
