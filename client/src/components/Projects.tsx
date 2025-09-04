@@ -19,7 +19,7 @@ export default function Projects() {
       extended: t("projects.restaurant.extended"),
       image:
         "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=300",
-      url: "https://menutech.onrender.com/",
+      url: "https://menutechstyles.netlify.app/",
     },
     {
       title: t("projects.menu.title"),
@@ -27,8 +27,8 @@ export default function Projects() {
       extended: t("projects.menu.extended"),
       image:
         "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=300",
-      url: "https://menustyles.onrender.com/",
-    },
+      url: "https://menutechstyles.netlify.app/",
+    }, 
     {
       title: t("projects.realestate.title"),
       description: t("projects.realestate.desc"),
@@ -36,7 +36,7 @@ export default function Projects() {
       image:
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=300",
       url: "https://realtypilot.netlify.app/",
-    },
+    }, 
   ];
 
   const openModal = (title: string, content: string) => {
@@ -63,7 +63,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`ai-card rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl group fade-in-up stagger-${
+              className={`ai-card rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl group fade-in-up stagger-${ 
                 index + 3
               }`}
             >
@@ -106,7 +106,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="text-pink-500 hover:text-red-500 transition-all duration-300 font-medium flex items-center hover:translate-x-1 min-h-[44px] py-2 touch-manipulation text-sm sm:text-base"
                     >
-                      {t("common.visit_site")}{" "}
+                      {t("common.visit_site")} 
                       <ExternalLink className="ml-1" size={16} />
                     </a>
                   ) : (
@@ -114,7 +114,7 @@ export default function Projects() {
                       onClick={() => openModal(project.title, project.extended)}
                       className="text-pink-500 hover:text-red-500 transition-all duration-300 font-medium flex items-center hover:translate-x-1 min-h-[44px] py-2 touch-manipulation text-sm sm:text-base"
                     >
-                      {t("common.read_more")}{" "}
+                      {t("common.read_more")} 
                       <ExternalLink className="ml-1" size={16} />
                     </button>
                   )}
