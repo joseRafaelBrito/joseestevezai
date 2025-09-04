@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { TranslationProvider } from "@/contexts/TranslationContext";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
+import Preloader from "@/components/Preloader";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <TranslationProvider>
+          <Preloader />
           <Toaster />
           <Router />
         </TranslationProvider>
