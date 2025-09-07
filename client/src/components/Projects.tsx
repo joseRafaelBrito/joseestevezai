@@ -60,68 +60,78 @@ export default function Projects() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className={`ai-card rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl group fade-in-up stagger-${ 
-                index + 3
-              }`}
-            >
-              <div className="overflow-hidden">
-                {project.url ? (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block cursor-pointer"
-                  >
-                    <img
-                      src={project.image}
-                      alt={`${project.title} - AI automation services for restaurants and real estate - automatización con IA para restaurantes e inmobiliarias`}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </a>
-                ) : (
+          {projects.map((project, index) => {
+            const CardContent = () => (
+              <div
+                className={`ai-card rounded-xl overflow-hidden group h-full flex flex-col`}
+              >
+                <div className="overflow-hidden">
                   <img
                     src={project.image}
                     alt={`${project.title} - AI automation services for restaurants and real estate - automatización con IA para restaurantes e inmobiliarias`}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
                   />
-                )}
-              </div>
-              <div className="p-4 sm:p-6">
-                <h3 className="text-lg sm:text-xl font-semibold mb-3 group-hover:text-pink-500 transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-slate-300 mb-4 leading-relaxed text-sm sm:text-base">
-                  {project.description}
-                </p>
-                <div className="flex items-center gap-3">
-                  {project.url ? (
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-pink-500 hover:text-red-500 transition-all duration-300 font-medium flex items-center hover:translate-x-1 min-h-[44px] py-2 touch-manipulation text-sm sm:text-base"
-                    >
-                      {t("common.visit_site")} 
-                      <ExternalLink className="ml-1" size={16} />
-                    </a>
-                  ) : (
-                    <button
-                      onClick={() => openModal(project.title, project.extended)}
-                      className="text-pink-500 hover:text-red-500 transition-all duration-300 font-medium flex items-center hover:translate-x-1 min-h-[44px] py-2 touch-manipulation text-sm sm:text-base"
-                    >
-                      {t("common.read_more")} 
-                      <ExternalLink className="ml-1" size={16} />
-                    </button>
+                </div>
+                <div className="p-4 sm:p-6 flex-grow flex flex-col">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-3 group-hover:text-pink-500 transition-colors">
+                    {project.title}
+                  </h3>
+                  <p className="text-slate-300 mb-4 leading-relaxed text-sm sm:text-base flex-grow">
+                    {project.description}
+                  </p>
+                  {!project.isCardLink && (
+                    <div className="flex items-center gap-3 mt-auto">
+                      {project.url ? (
+                        <a
+                          href={project.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-pink-500 hover:text-red-500 transition-all duration-300 font-medium flex items-center hover:translate-x-1 min-h-[44px] py-2 touch-manipulation text-sm sm:text-base"
+                        >
+                          {t("common.visit_site")}
+                          <ExternalLink className="ml-1" size={16} />
+                        </a>
+                      ) : (
+                        <button
+                          onClick={() =>
+                            openModal(project.title, project.extended)
+                          }
+                          className="text-pink-500 hover:text-red-500 transition-all duration-300 font-medium flex items-center hover:translate-x-1 min-h-[44px] py-2 touch-manipulation text-sm sm:text-base"
+                        >
+                          {t("common.read_more")}
+                          <ExternalLink className="ml-1" size={16} />
+                        </button>
+                      )}
+                    </div>
                   )}
                 </div>
               </div>
-            </div>
-          ))}
+            );
+
+            if (project.isCardLink) {
+              return (
+                <a
+                  key={index}
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl fade-in-up stagger-${index + 3}`}
+                >
+                  <CardContent />
+                </a>
+              );
+            }
+
+            return (
+              <div
+                key={index}
+                className={`hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl fade-in-up stagger-${index + 3}`}
+              >
+                <CardContent />
+              </div>
+            );
+          })}
         </div>
 
         <div className="text-center fade-in-up stagger-6">
