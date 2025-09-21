@@ -1,0 +1,20 @@
+{
+    "faqs": [
+        {
+            "question": "What services do you offer?",
+            "answer": "We offer a range of services including web development, AI integration, and chatbot creation. You can find more details on our services page."
+        },
+        {
+            "question": "What is your pricing?",
+            "answer": "Our pricing varies depending on the project scope. Please visit our pricing page for more information or contact us for a custom quote."
+        },
+        {
+            "question": "How can I contact you?",
+            "answer": "You can contact us through the contact form on our website or by emailing us at contact@joseestevezai.com."
+        },
+        {
+            "question": "What is n8n?",
+            "answer": "n8n is a powerful workflow automation tool that allows you to connect different applications and services to automate tasks. We use it to power our chatbots."
+        }
+    ]
+}
