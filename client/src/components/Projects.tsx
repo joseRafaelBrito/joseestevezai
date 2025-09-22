@@ -19,7 +19,11 @@ export default function Projects() {
       extended: t("projects.restaurant.extended"),
       image:
         "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=300",
+<<<<<<< HEAD
       url: "https://menutech.onrender.com/",
+=======
+      url: "https://menutechstyles.netlify.app/",
+>>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
     },
     {
       title: t("projects.menu.title"),
@@ -28,7 +32,11 @@ export default function Projects() {
       image:
         "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=300",
       url: "https://menutechstyles.netlify.app/",
+<<<<<<< HEAD
     },
+=======
+    }, 
+>>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
     {
       title: t("projects.realestate.title"),
       description: t("projects.realestate.desc"),
@@ -36,7 +44,11 @@ export default function Projects() {
       image:
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=300",
       url: "https://realtypilot.netlify.app/",
+<<<<<<< HEAD
     },
+=======
+    }, 
+>>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
   ];
 
   const openModal = (title: string, content: string) => {
@@ -66,6 +78,7 @@ export default function Projects() {
                 className={`ai-card rounded-xl overflow-hidden group h-full flex flex-col`}
               >
                 <div className="overflow-hidden">
+<<<<<<< HEAD
                   {project.url ? (
                     <a
                       href={project.url}
@@ -88,6 +101,14 @@ export default function Projects() {
                       loading="lazy"
                     />
                   )}
+=======
+                  <img
+                    src={project.image}
+                    alt={`${project.title} - AI automation services for restaurants and real estate - automatización con IA para restaurantes e inmobiliarias`}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+>>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
                 </div>
                 <div className="p-4 sm:p-6 flex-grow flex flex-col">
                   <h3 className="text-lg sm:text-xl font-semibold mb-3 group-hover:text-pink-500 transition-colors">
@@ -132,9 +153,13 @@ export default function Projects() {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
+<<<<<<< HEAD
                   className={`block hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl fade-in-up stagger-${
                     index + 3
                   }`}
+=======
+                  className={`block hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl fade-in-up stagger-${index + 3}`}
+>>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
                 >
                   <CardContent />
                 </a>
@@ -144,9 +169,13 @@ export default function Projects() {
             return (
               <div
                 key={index}
+<<<<<<< HEAD
                 className={`hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl fade-in-up stagger-${
                   index + 3
                 }`}
+=======
+                className={`hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl fade-in-up stagger-${index + 3}`}
+>>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
               >
                 <CardContent />
               </div>
