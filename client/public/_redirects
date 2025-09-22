@@ -1,0 +1,7 @@
+# Force HTTPS redirects
+http://joseestevezai.com/*    https://joseestevezai.com/:splat    301!
+http://www.joseestevezai.com/*    https://joseestevezai.com/:splat    301!
+https://www.joseestevezai.com/*    https://joseestevezai.com/:splat    301!
+
+# SPA fallback
+/*    /index.html    200
