@@ -33,11 +33,7 @@ const translations = {
     "hero.description":
       "Transform your business operations with our expert AI automation services. We specialize in restaurant automation, real estate AI solutions, and custom workflows that streamline processes, reduce costs, and increase efficiency. Our automation with AI technology serves small businesses, restaurants, and real estate professionals across the United States and Latin America.",
     "hero.get_started": "Get Restaurant Menu Builder",
-<<<<<<< HEAD
     "hero.learn_more": "View Restaurant Solutions",
-=======
-    "hero.learn_more": "View Restaurant Solutions", 
->>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
     "hero.trusted_by":
       "Trusted by 200+ restaurants and real estate businesses in USA and Latin America",
 
@@ -75,20 +71,13 @@ const translations = {
     "services.analytics.desc":
       "Simplify real estate automation with structured workflows that automate property management, client communications, and market analysis — ensuring faster delivery and higher quality solutions.",
     "common.learn_more": "Learn More",
-<<<<<<< HEAD
     "common.visit_site": "Visit Site",
-=======
->>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
 
     // Projects
     "projects.title": "AI Automation Projects for Restaurants and Real Estate",
     "projects.subtitle":
       "Explore our portfolio of innovative AI automation services and intelligent business solutions tailored for restaurant digital menus and real estate automation across USA and Latin America.",
-<<<<<<< HEAD
     "projects.restaurant.title": "Restaurant Management Dashboard",
-=======
-    "projects.restaurant.title": "Restaurant Digital Menus with AI Automation",
->>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
     "projects.restaurant.desc":
       "An advanced AI automation dashboard that integrates restaurant digital menu management with SEO optimization, helping restaurants improve online visibility, attract more customers, and increase reservations through intelligent automation solutions.",
     "projects.restaurant.extended":
@@ -272,10 +261,7 @@ const translations = {
     "services.analytics.desc":
       "Simplifica la automatización inmobiliaria con flujos de trabajo estructurados que automatizan la gestión de propiedades, comunicaciones con clientes y análisis de mercado — asegurando entregas más rápidas y soluciones de mayor calidad.",
     "common.learn_more": "Saber Más",
-<<<<<<< HEAD
     "common.visit_site": "Visitar Sitio",
-=======
->>>>>>> afa53410369f8c59f44e989a687f74d268a11ec6
 
     // Projects
     "projects.title":
