@@ -97,6 +97,9 @@
     />
     <meta name="theme-color" content="#1e293b" />
     <link rel="icon" type="image/png" href="/joseE.png" />
+    
+    <!-- n8n Chat Widget CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
     <!-- Enhanced Structured Data for Local Business & Services -->
     <script type="application/ld+json">
@@ -214,5 +217,14 @@
       type="javascript"
       src="https://replit.com/public/js/replit-dev-banner.js"
     ></script>
+    
+    <!-- n8n Chat Widget -->
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
+      });
+    </script>
   </body>
 </html>
