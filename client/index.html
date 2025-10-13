@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -97,9 +97,7 @@
     />
     <meta name="theme-color" content="#1e293b" />
     <link rel="icon" type="image/png" href="/joseE.png" />
-    
-    <!-- n8n Chat Widget CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
 
     <!-- Enhanced Structured Data for Local Business & Services -->
     <script type="application/ld+json">
@@ -211,20 +209,40 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script src="/chatbot.js"></script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script
       type="javascript"
       src="https://replit.com/public/js/replit-dev-banner.js"
     ></script>
-    
-    <!-- n8n Chat Widget -->
-    <script type="module">
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-      createChat({
-        webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
-      });
-    </script>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/style.css" rel="stylesheet" />
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/chat.bundle.es.js';
+
+  const webhookBase =
+    window.location.hostname === 'localhost'
+      ? 'http://localhost:5678'
+      : 'https://automation.joseestevezai.com'; // replace this with your deployed n8n domain if different
+
+  createChat({
+    webhookUrl: `${webhookBase}/webhook/e8380a2c-fc3c-4f82-9cab-3598f0ded2b1/chat`,
+    target: '#n8n-chat',
+    mode: 'window',
+    showWelcomeScreen: false,
+    defaultLanguage: 'en',
+    initialMessages: ['Hi there! 👋', 'How can I assist you today?'],
+    i18n: {
+      en: {
+        title: 'Hi there! 👋',
+        subtitle: "Start a chat. We're here to help you 24/7.",
+        footer: '',
+        getStarted: 'New Conversation',
+        inputPlaceholder: 'Type your question...',
+      },
+    },
+    branding: { showPoweredBy: false },
+    enableStreaming: false
+  });
+</script>
   </body>
 </html>
