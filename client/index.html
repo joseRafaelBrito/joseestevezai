@@ -1,11 +1,8 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
     <!-- Enhanced SEO Meta Tags -->
     <title>
@@ -34,13 +31,9 @@
     <!-- Multilingual Support -->
     <link rel="alternate" hreflang="en" href="https://joseestevezai.com/" />
     <link rel="alternate" hreflang="es" href="https://joseestevezai.com/es/" />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://joseestevezai.com/"
-    />
+    <link rel="alternate" hreflang="x-default" href="https://joseestevezai.com/" />
 
-    <!-- Enhanced Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://joseestevezai.com/" />
     <meta
@@ -65,7 +58,7 @@
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="es_ES" />
 
-    <!-- Enhanced Twitter Cards -->
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:site" content="@estevez_brito" />
     <meta property="twitter:creator" content="@estevez_brito" />
@@ -89,24 +82,18 @@
 
     <!-- Additional SEO -->
     <link rel="canonical" href="https://joseestevezai.com/" />
-    <link
-      rel="sitemap"
-      type="application/xml"
-      title="Sitemap"
-      href="/sitemap.xml"
-    />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <meta name="theme-color" content="#1e293b" />
     <link rel="icon" type="image/png" href="/joseE.png" />
 
-
-    <!-- Enhanced Structured Data for Local Business & Services -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": ["LocalBusiness", "ProfessionalService", "TechnologyCompany"],
         "name": "Jose Estevez AI",
         "alternateName": ["Jose Estevez AI Automation", "JE AI Services"],
-        "description": "Leading AI automation services for businesses worldwide. Expert solutions in restaurant automation, real estate AI, and custom workflows. Servicios de automatización con inteligencia artificial para restaurantes e inmobiliarias.",
+        "description": "Leading AI automation services for businesses worldwide. Expert solutions in restaurant automation, real estate AI, and custom workflows.",
         "url": "https://joseestevezai.com",
         "sameAs": [
           "https://www.linkedin.com/in/jose-estevez-502528170/",
@@ -116,11 +103,7 @@
         "founder": {
           "@type": "Person",
           "name": "Jose Estevez",
-          "jobTitle": "AI Automation Specialist",
-          "sameAs": [
-            "https://www.linkedin.com/in/jose-estevez-502528170/",
-            "https://x.com/estevez_brito"
-          ]
+          "jobTitle": "AI Automation Specialist"
         },
         "address": {
           "@type": "PostalAddress",
@@ -133,116 +116,57 @@
           "latitude": "25.7617",
           "longitude": "-80.1918"
         },
-        "serviceArea": [
-          {
-            "@type": "Country",
-            "name": "United States"
-          },
-          {
-            "@type": "Place",
-            "name": "Latin America"
-          }
-        ],
         "areaServed": ["US", "MX", "CO", "AR", "CL", "PE", "EC", "VE", "BR"],
-        "knowsLanguage": ["English", "Spanish"],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "AI Automation Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Restaurant AI Automation",
-                "alternateName": "Automatización con IA para Restaurantes",
-                "description": "AI-powered digital menu solutions, order automation, and customer engagement systems for restaurants",
-                "provider": {
-                  "@type": "LocalBusiness",
-                  "name": "Jose Estevez AI"
-                },
-                "serviceType": "AI Automation",
-                "category": "Restaurant Technology"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Real Estate AI Automation",
-                "alternateName": "IA para Inmobiliarias",
-                "description": "AI automation solutions for real estate professionals including lead generation, property management, and client communication",
-                "provider": {
-                  "@type": "LocalBusiness",
-                  "name": "Jose Estevez AI"
-                },
-                "serviceType": "AI Automation",
-                "category": "Real Estate Technology"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Custom AI Workflows",
-                "alternateName": "Flujos de Trabajo con IA Personalizados",
-                "description": "Custom business process automation with Python, n8n, and AI integration for any industry",
-                "provider": {
-                  "@type": "LocalBusiness",
-                  "name": "Jose Estevez AI"
-                },
-                "serviceType": "Custom AI Development",
-                "category": "Business Automation"
-              }
-            }
-          ]
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "50",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
+        "knowsLanguage": ["English", "Spanish"]
       }
     </script>
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- 👇 Add this container for your chatbot -->
+    <div id="n8n-chat"></div>
+
     <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+
     <script
       type="javascript"
       src="https://replit.com/public/js/replit-dev-banner.js"
     ></script>
 
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/style.css" rel="stylesheet" />
-<script type="module">
-  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/chat.bundle.es.js';
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/style.css"
+      rel="stylesheet"
+    />
 
-  const webhookBase =
-    window.location.hostname === 'localhost'
-      ? 'http://localhost:5678'
-      : 'https://n8n-chatbot-6ixegw.fly.dev'; // replace this with your deployed n8n domain if different
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/chat.bundle.es.js';
 
-  createChat({
-    webhookUrl: `${webhookBase}/webhook/e8380a2c-fc3c-4f82-9cab-3598f0ded2b1/chat`,
-    target: '#n8n-chat',
-    mode: 'window',
-    showWelcomeScreen: false,
-    defaultLanguage: 'en',
-    initialMessages: ['Hi there! 👋', 'How can I assist you today?'],
-    i18n: {
-      en: {
-        title: 'Hi there! 👋',
-        subtitle: "Start a chat. We're here to help you 24/7.",
-        footer: '',
-        getStarted: 'New Conversation',
-        inputPlaceholder: 'Type your question...',
-      },
-    },
-    branding: { showPoweredBy: false },
-    enableStreaming: false
-  });
-</script>
+      const webhookBase =
+        window.location.hostname === 'localhost'
+          ? 'http://localhost:5678'
+          : 'https://n8n-chatbot-6ixegw.fly.dev'; // deployed Fly.io domain
+
+      createChat({
+        webhookUrl: `${webhookBase}/webhook/e8380a2c-fc3c-4f82-9cab-3598f0ded2b1/chat`,
+        target: '#n8n-chat',
+        mode: 'window',
+        showWelcomeScreen: false,
+        defaultLanguage: 'en',
+        initialMessages: ['Hi there! 👋', 'How can I assist you today?'],
+        i18n: {
+          en: {
+            title: 'Hi there! 👋',
+            subtitle: "Start a chat. We're here to help you 24/7.",
+            footer: '',
+            getStarted: 'New Conversation',
+            inputPlaceholder: 'Type your question...'
+          }
+        },
+        branding: { showPoweredBy: false },
+        enableStreaming: false
+      });
+    </script>
   </body>
 </html>
