@@ -129,7 +129,7 @@ export default function Footer() {
             
             {/* Center credit */}
             <div className="flex items-center space-x-2 text-slate-400 text-sm">
-              <span>Designed with</span>
+              <span>Made with love</span>
               <Heart className="text-red-500 fill-red-500" size={16} />
               <span>by Jose Estevez</span>
             </div>
