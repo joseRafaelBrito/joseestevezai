@@ -12,6 +12,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/es" component={Home} /> {/* Added route for Spanish (/es) */}
       <Route component={NotFound} />
     </Switch>
   );
