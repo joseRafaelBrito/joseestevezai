@@ -1,9 +1,17 @@
 import { Calendar, Clock, ArrowRight, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/contexts/TranslationContext";
+import { useState } from "react";
+import BlogModal from "@/components/BlogModal";
 
 export default function BlogSection() {
   const { t } = useTranslation();
+  type BlogPostType = {
+    id: number; title: string; titleEs: string; excerpt: string; excerptEs: string;
+    image: string; alt: string; date: string; readTime: string;
+    category: string; categoryEs: string; slug: string;
+  };
+  const [selectedPost, setSelectedPost] = useState<BlogPostType | null>(null);
 
   const blogPosts = [
     {
@@ -51,6 +59,7 @@ export default function BlogSection() {
   ];
 
   return (
+    <>
     <section id="blog" className="py-20 bg-slate-900/30">
       <div className="container mx-auto px-6">
         {/* SEO-Optimized Header */}
@@ -125,12 +134,12 @@ export default function BlogSection() {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <a
-                    href={`/blog/${post.slug}`}
+                  <button
+                    onClick={() => setSelectedPost(post)}
                     className="text-pink-500 hover:text-red-500 transition-all duration-300 font-medium flex items-center hover:translate-x-1"
                   >
                     Read More <ArrowRight className="ml-1" size={16} />
-                  </a>
+                  </button>
                   <Globe className="text-slate-500" size={16} />
                 </div>
               </div>
@@ -190,5 +199,12 @@ export default function BlogSection() {
         </div>
       </div>
     </section>
+
+    <BlogModal
+      isOpen={selectedPost !== null}
+      onClose={() => setSelectedPost(null)}
+      post={selectedPost}
+    />
+    </>
   );
 }
