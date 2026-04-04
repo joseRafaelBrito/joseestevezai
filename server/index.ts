@@ -4,25 +4,7 @@ import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
 const app = express();
-
-// CORS — allow your domain in production, all origins in development
-app.use(cors({
-  origin: app.get("env") === "production"
-    ? "https://joseestevezai.com"
-    : true,
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
-
-// Content Security Policy
-app.use((_req: Request, res: Response, next: NextFunction) => {
-  res.setHeader(
-    "Content-Security-Policy",
-    "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://replit.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https:; font-src 'self' data:; frame-src 'self';"
-  );
-  next();
-});
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
