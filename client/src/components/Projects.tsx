@@ -4,7 +4,11 @@ import { useTranslation } from "@/contexts/TranslationContext";
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
-export default function Projects() {
+interface ProjectsProps {
+  onContactModalOpen: () => void;
+}
+
+export default function Projects({ onContactModalOpen }: ProjectsProps) {
   const { t } = useTranslation();
   const [modalData, setModalData] = useState<{
     isOpen: boolean;
@@ -151,7 +155,7 @@ export default function Projects() {
         </div>
 
         <div className="text-center fade-in-up stagger-6">
-          <Button className="bg-red-500 hover:bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all transform hover:scale-105 hover:shadow-lg bounce-gentle min-h-[48px] touch-manipulation text-sm sm:text-base">
+          <Button onClick={onContactModalOpen} className="bg-red-500 hover:bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold transition-all transform hover:scale-105 hover:shadow-lg bounce-gentle min-h-[48px] touch-manipulation text-sm sm:text-base">
             <FolderOpen className="mr-2" size={18} />
             {t("projects.explore_all")}
           </Button>

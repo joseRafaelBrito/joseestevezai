@@ -23,7 +23,7 @@ export default function Home() {
       <AboutMe />
       <Features />
       <Services />
-      <Projects />
+      <Projects onContactModalOpen={() => setIsContactModalOpen(true)} />
       <Testimonials />
       <Pricing onContactModalOpen={() => setIsContactModalOpen(true)} />
       <BlogSection />
