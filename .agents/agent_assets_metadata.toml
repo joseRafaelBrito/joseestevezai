@@ -1,0 +1,20 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "nJlszYfH-Y7aEr-VYbbXO"
+uri = "file://attached_assets/stock_images/maria_rodriguez_testimonial_1.jpg"
+type = "image"
+title = "professional latina woman smiling portrait headshot business"
+
+[[outputs]]
+id = "-gj-ee7Svm52ZRCFo8PRM"
+uri = "file://attached_assets/stock_images/maria_rodriguez_testimonial_2.jpg"
+type = "image"
+title = "professional latina woman smiling portrait headshot business"
+
+[[outputs]]
+id = "RxwvtsxDLYffjbZ4NaV4v"
+uri = "file://attached_assets/stock_images/maria_rodriguez_testimonial_3.jpg"
+type = "image"
+title = "professional latina woman smiling portrait headshot business"
