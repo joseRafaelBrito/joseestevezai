@@ -9,7 +9,7 @@ export default function Testimonials() {
       text: t('testimonials.sarah.text'),
       author: t('testimonials.sarah.author'),
       role: t('testimonials.sarah.role'),
-      image: "/maria_rodriguez.jpg"
+      image: "https://images.unsplash.com/photo-1619970096004-08f804595ea4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=80&h=80"
     },
     {
       text: t('testimonials.michael.text'),
