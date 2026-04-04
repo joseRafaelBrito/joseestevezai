@@ -6,6 +6,11 @@ import contactRouter from "./routes/contact";
 const N8N_WEBHOOK_URL = "https://n8n-2-g1zv.onrender.com/webhook/983207f3-6370-4197-928b-691f23a6b049/chat";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Redirect /es and /es/ to homepage (Spanish hreflang tag causes Google to index this path)
+  app.get(["/es", "/es/"], (_req: Request, res: Response) => {
+    res.redirect(301, "/");
+  });
+
   // Contact API routes
   app.use("/api/contact", contactRouter);
 
