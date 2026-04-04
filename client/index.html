@@ -130,22 +130,17 @@
 
     <script type="module" src="/src/main.tsx"></script>
 
-    <script
-      type="text/javascript"
-      src="https://replit.com/public/js/replit-dev-banner.js"
-    ></script>
-
     <link
       href="https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/style.css"
       rel="stylesheet"
     />
 
-    <!-- Corrected n8n chatbot script -->
+    <!-- n8n chatbot script -->
     <script type="module">
       import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/chat.bundle.es.js';
 
       createChat({
-        webhookUrl: "https://n8n-2-g1zv.onrender.com/webhook/983207f3-6370-4197-928b-691f23a6b049/chat",
+        webhookUrl: "/api/chat",
         target: "#n8n-chat",
         mode: "window",
         showWelcomeScreen: false,
