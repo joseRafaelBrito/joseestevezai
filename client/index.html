@@ -140,28 +140,7 @@
       rel="stylesheet"
     />
 
-    <!-- Corrected n8n chatbot script -->
-    <script type="module">
-      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@0.59.1/dist/chat.bundle.es.js';
-
-      createChat({
-        webhookUrl: "https://n8n-2-g1zv.onrender.com/webhook/983207f3-6370-4197-928b-691f23a6b049/chat",
-        target: "#n8n-chat",
-        mode: "window",
-        showWelcomeScreen: false,
-        defaultLanguage: "en",
-        initialMessages: ["Hi there! 👋", "How can I assist you today?"],
-        i18n: {
-          en: {
-            title: "Hi there! 👋",
-            subtitle: "Start a chat. We're here to help you 24/7.",
-            footer: "",
-            getStarted: "New Conversation",
-            inputPlaceholder: "Type your question..."
-          }
-        },
-        branding: { showPoweredBy: false }
-      });
-    </script>
+    <!-- Static file so Vite build keeps chat init (inline modules are dropped from index.html) -->
+    <script type="module" src="/n8n-chat-init.js"></script>
   </body>
 </html>

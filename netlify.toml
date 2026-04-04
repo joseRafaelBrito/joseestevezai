@@ -1,5 +1,6 @@
+# Vite writes to dist/public (see vite.config.ts outDir), not client/dist
 [build]
-  publish = "client/dist"
+  publish = "dist/public"
   command = "npm run build:client"
 
 [build.environment]
