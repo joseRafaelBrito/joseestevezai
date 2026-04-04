@@ -9,7 +9,7 @@ export default function Testimonials() {
       text: t('testimonials.sarah.text'),
       author: t('testimonials.sarah.author'),
       role: t('testimonials.sarah.role'),
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=80&h=80"
+      image: "https://ui-avatars.com/api/?name=Maria+Rodriguez&background=7c3aed&color=fff&size=80&rounded=true"
     },
     {
       text: t('testimonials.michael.text'),
