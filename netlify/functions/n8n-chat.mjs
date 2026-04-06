@@ -3,7 +3,7 @@
  * (browser → same-origin /api/n8n-chat → this function → n8n webhook).
  */
 const N8N_WEBHOOK =
-  "https://my-n8n-app.onrender.com/webhook/580df43b-63eb-48b4-bd07-1cda2e53490f/chat";
+  "https://n8n-3-ydel.onrender.com/webhook/f48c8ac6-83e6-4db0-8474-7fc3e44a8abd/chat";
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
