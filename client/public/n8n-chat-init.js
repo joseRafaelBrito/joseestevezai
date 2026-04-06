@@ -9,7 +9,7 @@ const isLocal =
   window.location.hostname === "127.0.0.1";
 
 const webhookUrl = isLocal
-  ? "https://n8n-2-g1zv.onrender.com/webhook/983207f3-6370-4197-928b-691f23a6b049/chat"
+  ? "https://my-n8n-app.onrender.com/webhook/580df43b-63eb-48b4-bd07-1cda2e53490f/chat"
   : `${window.location.origin}/api/n8n-chat`;
 
 createChat({
