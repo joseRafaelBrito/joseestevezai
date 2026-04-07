@@ -135,12 +135,14 @@
       src="https://replit.com/public/js/replit-dev-banner.js"
     ></script>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
 
-    <!-- Static file so Vite build keeps chat init (inline modules are dropped from index.html) -->
-    <script type="module" src="/n8n-chat-init.js"></script>
+      createChat({
+        webhookUrl:
+          "https://jestevez1.app.n8n.cloud/webhook/95835091-6bf7-4baf-8296-2dfe6bc7036a/chat",
+      });
+    </script>
   </body>
 </html>
