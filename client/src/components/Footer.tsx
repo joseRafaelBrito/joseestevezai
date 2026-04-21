@@ -131,7 +131,11 @@ export default function Footer() {
             <div className="flex items-center space-x-2 text-slate-400 text-sm">
               <span>Made with love</span>
               <Heart className="text-red-500 fill-red-500" size={16} />
-              <span>by Jose Estevez</span>
+              <span>by{" "}
+                <a href="/#about" className="text-slate-300 hover:text-white transition-colors duration-300">
+                  Jose Estevez AI
+                </a>
+              </span>
             </div>
             
             <div className="flex items-center space-x-6 text-sm">

@@ -18,23 +18,31 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
           {/* Image Column - Mobile First (Top on Mobile) */}
           <div className="relative fade-in-up lg:fade-in-right order-1 lg:order-2">
-            <div className="relative w-full max-w-sm sm:max-w-md mx-auto lg:max-w-full aspect-square rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
-              <img
-                src="/joseE.png?v=5"
-                srcSet="/joseE.png?v=5 320w, /joseE.png?v=5 400w, /joseE.png?v=5 600w, /joseE.png?v=5 800w"
-                sizes="(max-width: 640px) 320px, (max-width: 768px) 400px, (max-width: 1024px) 500px, 600px"
-                alt="Jose Estevez AI - Expert in AI automation, restaurant menu builder, digital menu creator, business automation, and real estate automation services - Especialista en automatización IA para restaurantes e inmobiliarias"
-                className="w-full h-full object-cover object-center"
-                loading="eager"
-                onError={(e) => {
-                  // Fallback to professional headshot if joseE.png fails to load
-                  e.currentTarget.src =
-                    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=600&fit=crop&crop=center&auto=format&q=80";
-                }}
-              />
-              {/* Subtle overlay for better integration */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-            </div>
+            <figure className="w-full max-w-sm sm:max-w-md mx-auto lg:max-w-full">
+              <div className="relative aspect-square rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-all duration-300">
+                <img
+                  src="/jose-estevez-automatizacion-ia-republica-dominicana.png"
+                  srcSet="/jose-estevez-automatizacion-ia-republica-dominicana.png 320w, /jose-estevez-automatizacion-ia-republica-dominicana.png 400w, /jose-estevez-automatizacion-ia-republica-dominicana.png 600w, /jose-estevez-automatizacion-ia-republica-dominicana.png 800w"
+                  sizes="(max-width: 640px) 320px, (max-width: 768px) 400px, (max-width: 1024px) 500px, 600px"
+                  alt="Jose Estevez experto en automatización IA en República Dominicana"
+                  title="Jose Estevez - Experto en Automatización IA en República Dominicana"
+                  width="600"
+                  height="600"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.currentTarget.src =
+                      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=600&fit=crop&crop=center&auto=format&q=80";
+                  }}
+                />
+                {/* Subtle overlay for better integration */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+              </div>
+              <figcaption className="mt-3 text-center text-sm text-slate-400">
+                <h2 className="text-base font-semibold text-slate-300 inline">Jose Estevez</h2>
+                {" — "}Experto en Automatización IA
+              </figcaption>
+            </figure>
           </div>
 
           {/* Text Content - Mobile Optimized */}

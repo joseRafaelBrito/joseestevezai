@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://joseestevezai.com/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://joseestevezai.com/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://joseestevezai.com/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://joseestevezai.com/" />
+    <image:image>
+      <image:loc>https://joseestevezai.com/jose-estevez-automatizacion-ia-republica-dominicana.png</image:loc>
+      <image:caption>Jose Estevez experto en automatización IA en República Dominicana</image:caption>
+      <image:title>Jose Estevez - Experto en Automatización IA</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://joseestevezai.com/es/</loc>
@@ -25,9 +30,9 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://joseestevezai.com/about/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://joseestevezai.com/es/about/" />
     <image:image>
-      <image:loc>https://joseestevezai.com/joseE.png</image:loc>
-      <image:caption>Jose Estevez AI - Expert in AI automation, restaurant menu builder, digital menu creator, business automation, and real estate automation services</image:caption>
-      <image:title>Jose Estevez AI Professional Photo</image:title>
+      <image:loc>https://joseestevezai.com/jose-estevez-automatizacion-ia-republica-dominicana.png</image:loc>
+      <image:caption>Jose Estevez experto en automatización IA en República Dominicana - AI Automation Expert</image:caption>
+      <image:title>Jose Estevez - Experto en Automatización IA | Jose Estevez AI</image:title>
     </image:image>
   </url>
   <url>
